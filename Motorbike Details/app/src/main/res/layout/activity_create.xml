@@ -1,197 +1,151 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#f000"
-    tools:context=".CreateUserActivity">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/buttonmotorbackground"
-        android:layout_width="382dp"
-        android:layout_height="150dp"
-        android:background="@drawable/motor_background"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.482"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f000"
+        tools:context=".CreateUserActivity"
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/buttondown1"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="154dp"
-        android:background="@drawable/down"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <Button
+            android:id="@+id/buttonheader"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/header"
+            android:layout_gravity="center"/>
+        </LinearLayout>
 
-    <Button
-        android:id="@+id/buttondown2"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="154dp"
-        android:background="@drawable/down"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.85"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/buttondown3"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="154dp"
-        android:background="@drawable/down"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.15"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <Button
+            android:id="@+id/buttondown"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/down"/>
+        </LinearLayout>
 
-    <Button
-        android:id="@+id/buttonhaley"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:background="@drawable/haley"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.054"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.973" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+        <Button
+            android:id="@+id/buttonsuzuki"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/suzuki_logo"/>
 
-    <Button
-        android:id="@+id/buttonhonda"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:background="@drawable/honda_decal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.545" />
+        <Button
+            android:id="@+id/buttonkawasaki"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:background="@drawable/kawasaki"/>
 
-    <Button
-        android:id="@+id/buttonyamaha"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:background="@drawable/yamaha"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.958"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.545" />
+            <Button
+                android:id="@+id/buttonktm"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="@drawable/ktm_logo" />
+        </LinearLayout>
 
-    <Button
-        android:id="@+id/buttonsym"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:background="@drawable/sym"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.054"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.759" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+        <Button
+            android:id="@+id/buttonpiaggio"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/piaggio_logo" />
 
-    <Button
-        android:id="@+id/buttonkawasaki"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:background="@drawable/kawasaki"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.759" />
+        <Button
+            android:id="@+id/buttontriumph"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/triumph_logo" />
 
-    <Button
-        android:id="@+id/buttonktm"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:background="@drawable/ktm_logo"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.958"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.759" />
+        <Button
+            android:id="@+id/buttonducati"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/ducati" />
+        </LinearLayout>
 
-    <Button
-        android:id="@+id/buttonbmw"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:background="@drawable/bmw_logo"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.973" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+        <Button
+            android:id="@+id/buttonsym"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/sym" />
 
-    <Button
-        android:id="@+id/buttonducati"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:background="@drawable/ducati"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.958"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.973" />
+        <Button
+            android:id="@+id/buttonhonda"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/honda_decal" />
 
-    <Button
-        android:id="@+id/buttonsuzuki"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:layout_marginTop="332dp"
-        android:background="@drawable/suzuki"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.054"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        <Button
+            android:id="@+id/buttonyamaha"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/yamaha_logo" />
+        </LinearLayout>
 
-    <Button
-        android:id="@+id/buttonpiaggio"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:layout_marginTop="200dp"
-        android:background="@drawable/piaggio_logo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.054"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+        <Button
+            android:id="@+id/buttonhaley"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/haley" />
 
-    <Button
-        android:id="@+id/buttontriumph"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:layout_marginTop="200dp"
-        android:background="@drawable/triumph_logo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <Button
+            android:id="@+id/buttonbmw"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/bmw_logo" />
 
-    <Button
-        android:id="@+id/buttonaprilia"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:layout_marginTop="200dp"
-        android:background="@drawable/aprilia"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.958"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <Button
+            android:id="@+id/buttonaprilia"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/aprilia" />
+        </LinearLayout>
 
-</android.support.constraint.ConstraintLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/buttonmotorbackground"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/motor_background"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -26,6 +26,10 @@
 
         <activity android:name=".CreateUserActivity" />
 
+        <activity android:name=".InfoActivity" />
+
+        <activity android:name=".MainActivity" />
+
     </application>
 
 </manifest>
