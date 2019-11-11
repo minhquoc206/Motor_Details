@@ -38,14 +38,14 @@ public class MainActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = new Intent(MainActivity.this, Login.class);
+//                Intent intent = new Intent(MainActivity.this, Login.class);
                 Person person = people.get(position);
                 Bundle bundle = new Bundle();
                 bundle.putString("name", person.getName());
                 bundle.putString("gender", person.getGender());
                 bundle.putInt("avatar", person.getAvatar());
-                intent.putExtras(bundle);
-                startActivity(intent);
+//                intent.putExtras(bundle);
+//                startActivity(intent);
             }
         });
         getUsers(2);

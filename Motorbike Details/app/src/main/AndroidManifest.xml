@@ -23,12 +23,9 @@
         </activity>
         <activity android:name=".MainActivity"/>
         <activity android:name=".InfoActivity"/>
-
+        <activity android:name=".fragment.Fragment_Activity"/>
         <activity android:name=".CreateUserActivity" />
 
-        <activity android:name=".InfoActivity" />
-
-        <activity android:name=".MainActivity" />
 
     </application>
 
