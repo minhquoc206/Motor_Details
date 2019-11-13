@@ -23,6 +23,8 @@ public class Fragment_Activity extends AppCompatActivity
         viewPager.setAdapter( (new PagerDemoAdapter()));
         TabLayout tabLayout = findViewById(R.id.tab_layout);
         tabLayout.setupWithViewPager(viewPager);
+
+
     }
 
     private class PagerDemoAdapter extends FragmentPagerAdapter
@@ -45,7 +47,7 @@ public class Fragment_Activity extends AppCompatActivity
         }
 
         @Override
-        public int getCount() { return 4; }
+        public int getCount() { return 6; }
 
         @Nullable
         @Override
