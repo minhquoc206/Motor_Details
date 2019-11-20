@@ -20,14 +20,14 @@ public class InfoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info);
 
-        imageView = (ImageView) findViewById(R.id.iv_avatar);
-        imageView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(InfoActivity.this, Fragment_Activity.class);
-                startActivity(intent);
-            }
-        });
+//        imageView = (ImageView) findViewById(R.id.iv_avatar);
+//        imageView.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(InfoActivity.this, Fragment_Activity.class);
+//                startActivity(intent);
+//            }
+//        });
 //
 //        imageView.setOnClickListener(new View.OnClickListener() {
 //            @Override
