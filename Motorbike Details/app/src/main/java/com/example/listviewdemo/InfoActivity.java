@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.listviewdemo.fragment.Fragment_Activity;
+
 public class InfoActivity extends AppCompatActivity {
 
     ImageView imageView;
@@ -18,15 +20,22 @@ public class InfoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info);
 
-        imageView = (ImageView) findViewById(R.id.iv_avatar);
-
-        imageView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(InfoActivity.this, MainActivity.class);
-                intent.setAction(Intent.ACTION_VIEW);
-                startActivity(intent);
-            }
-        });
+//        imageView = (ImageView) findViewById(R.id.iv_avatar);
+//        imageView.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(InfoActivity.this, Fragment_Activity.class);
+//                startActivity(intent);
+//            }
+//        });
+//
+//        imageView.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(InfoActivity.this, MainActivity.class);
+//                intent.setAction(Intent.ACTION_VIEW);
+//                startActivity(intent);
+//            }
+//        });
     }
 }
