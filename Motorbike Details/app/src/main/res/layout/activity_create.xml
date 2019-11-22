@@ -30,7 +30,7 @@
             android:orientation="horizontal">
             <TextView
                 android:text="SELECT MOTORBIKE MANUFACTURER..."
-                android:textColor="#9999FF"
+                android:textColor="#33FF66"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
             </TextView>
@@ -61,7 +61,6 @@
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:background="@drawable/honda_oto" />
-
             <Button
                 android:id="@+id/buttonyamaha"
                 android:layout_width="120dp"
@@ -81,22 +80,20 @@
             android:layout_gravity="center_horizontal"
             android:orientation="horizontal">
             <Button
+                android:id="@+id/buttonsym"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="@drawable/sym" />
+            <Button
                 android:id="@+id/buttonpiaggio"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:background="@drawable/piaggio_logo" />
-
             <Button
-                android:id="@+id/buttontriumph"
+                android:id="@+id/buttonkymco"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
-                android:background="@drawable/triumph_logo" />
-
-            <Button
-                android:id="@+id/buttonducati"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:background="@drawable/ducati" />
+                android:background="@drawable/kymco" />
         </LinearLayout>
 
 
@@ -106,15 +103,16 @@
             android:layout_gravity="center_horizontal"
             android:orientation="horizontal">
             <Button
-                android:id="@+id/buttonsym"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:background="@drawable/sym" />
-            <Button
                 android:id="@+id/buttonbmw"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:background="@drawable/bmw_logo" />
+            <Button
+                android:id="@+id/buttonkawasaki"
+                android:layout_width="120dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:background="@drawable/kawasaki4"/>
             <Button
                 android:id="@+id/buttonbenelli"
                 android:layout_width="120dp"
@@ -134,57 +132,10 @@
                 android:layout_height="120dp"
                 android:background="@drawable/ktm" />
             <Button
-                android:id="@+id/buttonkymco"
+                android:id="@+id/buttonducati"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
-                android:background="@drawable/kymco" />
-            <Button
-                android:id="@+id/buttonhaley"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:background="@drawable/haley2" />
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:orientation="horizontal">
-            <Button
-                android:id="@+id/mazda"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:background="@drawable/mazda" />
-            <Button
-                android:id="@+id/kia"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:background="@drawable/kia" />
-            <Button
-                android:id="@+id/ferrari"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:background="@drawable/ferrari" />
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:orientation="horizontal">
-            <Button
-                android:id="@+id/lamborghini"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:background="@drawable/lamborghini" />
-            <Button
-                android:id="@+id/buttonkawasaki"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:layout_gravity="center"
-                android:background="@drawable/kawasaki"/>
+                android:background="@drawable/ducati" />
             <Button
                 android:id="@+id/buttonaprilia"
                 android:layout_width="120dp"
@@ -199,21 +150,67 @@
             android:layout_gravity="center_horizontal"
             android:orientation="horizontal">
             <Button
-                android:id="@+id/vinfast"
+                android:id="@+id/mvagusta"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
-                android:background="@drawable/vinfast" />
+                android:background="@drawable/mv_agusta" />
             <Button
-                android:id="@+id/audi"
+                android:id="@+id/buttonhaley"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
-                android:background="@drawable/audi" />
+                android:background="@drawable/haley2" />
             <Button
-                android:id="@+id/bentley"
+                android:id="@+id/royalenfield"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
-                android:background="@drawable/bentley" />
+                android:background="@drawable/royal_enfield" />
         </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/gpx"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="@drawable/gpx" />
+            <Button
+                android:id="@+id/buttontriumph"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="@drawable/triumph_logo" />
+            <Button
+                android:id="@+id/motoguzzi"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="@drawable/moto_guzzi" />
+        </LinearLayout>
+
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:orientation="horizontal">-->
+<!--            <Button-->
+<!--                android:id="@+id/mazda"-->
+<!--                android:layout_width="120dp"-->
+<!--                android:layout_height="120dp"-->
+<!--                android:background="@drawable/mazda" />-->
+<!--            <Button-->
+<!--                android:id="@+id/kia"-->
+<!--                android:layout_width="120dp"-->
+<!--                android:layout_height="120dp"-->
+<!--                android:background="@drawable/kia" />-->
+<!--            <Button-->
+<!--                android:id="@+id/ferrari"-->
+<!--                android:layout_width="120dp"-->
+<!--                android:layout_height="120dp"-->
+<!--                android:background="@drawable/ferrari" />-->
+<!--        </LinearLayout>-->
 
 
         <LinearLayout
@@ -223,7 +220,7 @@
             android:orientation="horizontal">
             <TextView
                 android:text="--SEE YOU AGAIN--"
-                android:textColor="#9999FF"
+                android:textColor="#33FF66"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
             </TextView>
@@ -238,7 +235,7 @@
             <Button
                 android:id="@+id/buttonmotorbackground"
                 android:layout_width="match_parent"
-                android:layout_height="220dp"
+                android:layout_height="250dp"
                 android:background="@drawable/motor_background"
                 android:layout_gravity="center"/>
         </LinearLayout>

@@ -11,10 +11,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 import com.example.listviewdemo.R;
 
-public class Fragment_Yamaha extends AppCompatActivity
+import java.util.ArrayList;
+
+public class Fragment_Triumph extends AppCompatActivity
 {
     private ViewPager viewPager;
 
@@ -56,11 +60,11 @@ public class Fragment_Yamaha extends AppCompatActivity
         public CharSequence getPageTitle(int position){
             switch (position) {
                 case 0:
-                    return "Pho Thong";
+                    return "  Pho   Thong    ";
                 case 1:
-                    return "Phan khoi nho";
+                    return " Phan khoi nho ";
                 default:
-                    return "phan khoi lon";
+                    return " phan khoi lon ";
             }
         }
     }
