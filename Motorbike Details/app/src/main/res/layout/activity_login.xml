@@ -1,61 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ScrollView
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/background_motor"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/backround_doc3"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".Login" >
+    android:orientation="vertical">
+<!--    tools:context=".Login">-->
 
-<!--        <RelativeLayout-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            tools:context=".Login"-->
-<!--            android:layout_gravity="start" >-->
+<!--        -<LinearLayout android:layout_height="match_parent" android:layout_width="match_parent" android:orientation="vertical" android:focusableInTouchMode="true">-->
 
-<!--        &lt;!&ndash;Username&ndash;&gt;-->
-<!--        <TextView-->
-<!--            android:id="@+id/tv_username"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginTop="20dp"-->
-<!--            android:text="USERNAME : "-->
-<!--            android:layout_marginLeft="5dp"/>-->
+<!--        -<FrameLayout android:layout_height="wrap_content" android:layout_width="match_parent">-->
 
-<!--        <EditText-->
-<!--            android:id="@+id/et_username"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginRight="5dp"-->
-<!--            android:layout_toRightOf="@+id/tv_username"/>-->
+<!--        -<ScrollView android:layout_height="match_parent" android:id="@+id/scrollview" android:layout_width="match_parent">-->
 
-<!--        &lt;!&ndash;Password&ndash;&gt;-->
-<!--        <TextView-->
-<!--            android:id="@+id/tv_password"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginTop="20dp"-->
-<!--            android:text="PASSWORD : "-->
-<!--            android:layout_below="@+id/tv_username"-->
-<!--            android:layout_marginLeft="5dp"/>-->
+<!--        -<FrameLayout android:layout_height="match_parent" android:layout_width="match_parent" android:orientation="vertical">-->
 
-<!--        <EditText-->
-<!--            android:id="@+id/et_password"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginRight="5dp"-->
-<!--            android:layout_below="@id/et_username"-->
-<!--            android:layout_toRightOf="@+id/tv_password"/>-->
+<!--        -<LinearLayout android:layout_height="200dp" android:layout_width="match_parent" android:alpha="0.7">-->
 
-<!--                <Button-->
-<!--                    android:id="@+id/btn_login"-->
-<!--                    android:layout_width="150dp"-->
-<!--                    android:layout_height="50dp"-->
-<!--                    android:layout_below="@id/et_password"-->
-<!--                    android:layout_centerInParent="true"-->
-<!--                    android:background="@drawable/green" />-->
-<!--        </RelativeLayout>-->
+<!--        <ImageView android:layout_height="match_parent" android:id="@+id/banner_hatto" android:layout_width="match_parent" android:scaleType="centerCrop"/>-->
 
-</ScrollView>
+<!--</LinearLayout>-->
+
+<!--        <de.hdodenhof.circleimageview.CircleImageView android:layout_height="128dp" android:id="@+id/profile_avatar" android:layout_width="128dp" app:civ_border_width="1dp" app:civ_border_color="@color/white" android:src="@drawable/ic_hatto_default" android:padding="5dp" android:layout_gravity="center_horizontal" android:layout_marginTop="136dp"/>-->
+
+
+<!--        -<LinearLayout android:layout_height="match_parent" android:layout_width="match_parent" android:orientation="vertical" android:layout_marginTop="300dp">-->
+
+
+<!--        -<LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:background="@drawable/corner_regis_inactive" android:orientation="horizontal" android:layout_marginTop="20dp" android:layout_marginRight="30dp" android:layout_marginLeft="30dp" android:paddingRight="10dp" android:paddingLeft="20dp" android:paddingBottom="10dp" android:paddingTop="10dp">-->
+
+<!--        <ImageView android:layout_height="18dp" android:layout_width="18dp" android:src="@drawable/ic_profile_email" android:layout_gravity="center_vertical"/>-->
+
+<!--        <EditText android:layout_height="wrap_content" android:id="@+id/et_user2" android:layout_width="match_parent" android:background="@color/transparent" android:paddingLeft="15dp" android:paddingTop="10dp" android:textSize="16sp" android:textColor="@color/black" android:singleLine="true" android:inputType="textEmailAddress" android:hint="@string/text_email" android:fontFamily="@font/roboto_regular" android:layout_marginBottom="10dp"/>-->
+
+<!--</LinearLayout>-->
+
+
+<!--        -<RelativeLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:background="@drawable/corner_regis_inactive" android:orientation="horizontal" android:layout_marginTop="20dp" android:layout_marginRight="30dp" android:layout_marginLeft="30dp" android:paddingRight="10dp" android:paddingLeft="20dp" android:paddingBottom="10dp" android:paddingTop="10dp">-->
+
+<!--        <ImageView android:layout_height="18dp" android:layout_width="18dp" android:src="@drawable/ic_lock_2" android:layout_gravity="center_vertical" android:layout_centerVertical="true"/>-->
+
+<!--        <EditText android:layout_height="wrap_content" android:id="@+id/et_user4" android:layout_width="match_parent" android:background="@color/transparent" android:layout_marginLeft="18dp" android:paddingLeft="15dp" android:paddingTop="10dp" android:textSize="16sp" android:textColor="@color/black" android:singleLine="true" android:inputType="textPassword" android:hint="@string/text_password" android:fontFamily="@font/roboto_regular" android:layout_marginBottom="10dp" android:layout_toLeftOf="@+id/toogle"/>-->
+
+
+<!--        -<LinearLayout android:layout_height="wrap_content" android:id="@+id/toogle" android:layout_width="wrap_content" android:padding="10dp" android:layout_centerVertical="true" android:layout_alignParentEnd="true">-->
+
+<!--        <ImageView android:layout_height="18dp" android:id="@+id/toogle_eye" android:layout_width="18dp" android:src="@drawable/ic_eye_pass_inactive"/>-->
+
+<!--</LinearLayout>-->
+
+<!--</RelativeLayout>-->
+
+
+<!--        -<LinearLayout android:layout_height="wrap_content" android:id="@+id/btn_forgot_pass" android:layout_width="wrap_content" android:padding="10dp" android:layout_gravity="center_horizontal" android:layout_marginTop="20dp" android:layout_marginBottom="70dp">-->
+
+<!--        <TextView android:layout_height="wrap_content" android:id="@+id/text_resend" android:layout_width="wrap_content" android:textSize="15sp" android:textColor="@color/sky_blue" android:fontFamily="@font/roboto_regular" android:text="Quên mật khẩu" android:textAlignment="center"/>-->
+
+<!--</LinearLayout>-->
+
+<!--</LinearLayout>-->
+
+<!--</FrameLayout>-->
+
+<!--</ScrollView>-->
+
+<!--        <include android:layout_height="wrap_content" android:layout_width="match_parent" layout="@layout/tool_bar_transparent"/>-->
+
+<!--</FrameLayout>-->
+
+<!--</LinearLayout>-->
+
+
+<!--        -<RelativeLayout android:layout_height="wrap_content" android:id="@+id/new_location" android:layout_width="match_parent" android:background="@color/white75" android:padding="12dp" android:layout_gravity="bottom">-->
+
+
+<!--        -<LinearLayout android:layout_height="wrap_content" android:id="@+id/container_btn" android:layout_width="wrap_content" android:background="@drawable/corner_regis_active" android:paddingRight="20dp" android:paddingLeft="20dp" android:paddingBottom="10dp" android:paddingTop="10dp" android:layout_alignParentEnd="true">-->
+
+<!--        <TextView android:layout_height="wrap_content" android:id="@+id/text_register" android:layout_width="wrap_content" android:textColor="@color/white" android:fontFamily="@font/roboto_bold" android:text="Đăng nhập" android:textAllCaps="true"/>-->
+
+<!--</LinearLayout>-->
+
+<!--</RelativeLayout>-->
+
+</LinearLayout>

@@ -35,32 +35,28 @@ public class Fragment_Activity extends AppCompatActivity
         public Fragment getItem(int position) {
             switch (position) {
                 case 0:
-                    return new Fragment_Kawasaki();
+                    return new Fragment();
                 case 1:
-                    return new Fragment_Yamaha();
-                case 2:
-                    return new Fragment_Honda();
+                    return new Fragment();
                 default:
-                    return new Fragment_Sym();
+                    return new Fragment();
             }
 
         }
 
         @Override
-        public int getCount() { return 6; }
+        public int getCount() { return 3; }
 
         @Nullable
         @Override
         public CharSequence getPageTitle(int position){
             switch (position) {
                 case 0:
-                    return "KAWASAKI";
+                    return "Pho Thong";
                 case 1:
-                    return "YAMAHA";
-                case 2:
-                     return "HONDA";
+                    return "Phan khoi nho";
                 default:
-                    return "SYM";
+                    return "phan khoi lon";
             }
         }
     }
