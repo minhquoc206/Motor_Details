@@ -16,21 +16,10 @@
     <TextView
         android:id="@+id/tv_name"
         android:layout_toRightOf="@id/iv_avatar"
-        android:layout_alignTop="@id/iv_avatar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
         android:layout_marginStart="16dp"
         android:textSize="20sp"
-        android:text="Ninh Duong Lan Ngoc"
-        android:layout_marginTop="4dp" />
-
-    <TextView
-        android:id="@+id/tv_gioi_tinh"
-        android:layout_toRightOf="@id/iv_avatar"
-        android:layout_below="@id/tv_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:textSize="20sp"
-        android:text="Nu"/>
+        android:text="bike" />
 </RelativeLayout>

@@ -10,7 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.example.listviewdemo.R;
 
-public class Fragment_Activity extends AppCompatActivity
+public class Fragment_Agusta extends AppCompatActivity
 {
     private ViewPager viewPager;
 
@@ -18,7 +18,7 @@ public class Fragment_Activity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_fragment);
+        setContentView(R.layout.agusta);
         viewPager = findViewById(R.id.view_paper);
         viewPager.setAdapter( (new PagerDemoAdapter()));
         TabLayout tabLayout = findViewById(R.id.tab_layout);
@@ -54,10 +54,11 @@ public class Fragment_Activity extends AppCompatActivity
                 case 0:
                     return "Pho Thong";
                 case 1:
-                    return "Phan khoi nho";
+                    return "PKN";
                 default:
-                    return "phan khoi lon";
+                    return "PKL";
             }
         }
     }
 }
+

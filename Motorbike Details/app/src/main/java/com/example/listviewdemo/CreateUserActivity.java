@@ -1,22 +1,29 @@
 package com.example.listviewdemo;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 
-import com.example.listviewdemo.fragment.Fragment_Activity;
-import com.example.listviewdemo.schemes.UserRequestBody;
-import com.example.listviewdemo.webservice.WebService;
-
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
+import com.example.listviewdemo.fragment.Fragment_Agusta;
+import com.example.listviewdemo.fragment.Fragment_Aprilia;
+import com.example.listviewdemo.fragment.Fragment_BMW;
+import com.example.listviewdemo.fragment.Fragment_Benelli;
+import com.example.listviewdemo.fragment.Fragment_Ducati;
+import com.example.listviewdemo.fragment.Fragment_GPX;
+import com.example.listviewdemo.fragment.Fragment_Guzzi;
+import com.example.listviewdemo.fragment.Fragment_Harley;
+import com.example.listviewdemo.fragment.Fragment_Honda;
+import com.example.listviewdemo.fragment.Fragment_KTM;
+import com.example.listviewdemo.fragment.Fragment_Kawasaki;
+import com.example.listviewdemo.fragment.Fragment_KymCo;
+import com.example.listviewdemo.fragment.Fragment_Piaggio;
+import com.example.listviewdemo.fragment.Fragment_RoyalEnField;
+import com.example.listviewdemo.fragment.Fragment_Suzuki;
+import com.example.listviewdemo.fragment.Fragment_Sym;
+import com.example.listviewdemo.fragment.Fragment_Triumph;
+import com.example.listviewdemo.fragment.Fragment_Yamaha;
 
 public class CreateUserActivity extends AppCompatActivity {
 
@@ -34,7 +41,11 @@ public class CreateUserActivity extends AppCompatActivity {
     private Button buttonKymCo;
     private Button buttonHarley;
     private Button buttonKawasaki;
-    private Button buttonVinfast;
+    private Button buttonAprilia;
+    private Button buttonmvagusta;
+    private Button buttonRoyalEnField;
+    private Button buttonGPX;
+    private Button buttonMotoguzzi;
 
 
 
@@ -57,13 +68,21 @@ public class CreateUserActivity extends AppCompatActivity {
         buttonKtm = findViewById(R.id.buttonktm);
         buttonKymCo = findViewById(R.id.buttonkymco);
         buttonHarley = findViewById(R.id.buttonhaley);
+        buttonAprilia = findViewById(R.id.buttonaprilia);
+        buttonmvagusta = findViewById(R.id.mvagusta);
+        buttonRoyalEnField = findViewById(R.id.royalenfield);
+        buttonGPX = findViewById(R.id.gpx);
+        buttonMotoguzzi = findViewById(R.id.motoguzzi);
+
+
+
 
 
 
         buttonSuzuki.setOnClickListener(new View.OnClickListener()   {
             @Override
             public void onClick(View view)  {
-                Intent intent = new Intent(CreateUserActivity.this, Fragment_Activity.class);
+                Intent intent = new Intent(CreateUserActivity.this, Fragment_Suzuki.class);
                 startActivity(intent);
             }
         });
@@ -71,7 +90,7 @@ public class CreateUserActivity extends AppCompatActivity {
         buttonHonda.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(CreateUserActivity.this, Fragment_Activity.class);
+                Intent intent = new Intent(CreateUserActivity.this, Fragment_Honda.class);
                 startActivity(intent);
 
             }
@@ -79,7 +98,7 @@ public class CreateUserActivity extends AppCompatActivity {
         buttonSym.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(CreateUserActivity.this, Fragment_Activity.class);
+                Intent intent = new Intent(CreateUserActivity.this, Fragment_Sym.class);
                 startActivity(intent);
 
             }
@@ -87,7 +106,7 @@ public class CreateUserActivity extends AppCompatActivity {
         buttonKawasaki.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(CreateUserActivity.this, Fragment_Activity.class);
+                Intent intent = new Intent(CreateUserActivity.this, Fragment_Kawasaki.class);
                 startActivity(intent);
 
             }
@@ -95,66 +114,103 @@ public class CreateUserActivity extends AppCompatActivity {
         buttonPiaggio.setOnClickListener(new View.OnClickListener()   {
             @Override
             public void onClick(View view)  {
-                Intent intent = new Intent(CreateUserActivity.this, Fragment_Activity.class);
+                Intent intent = new Intent(CreateUserActivity.this, Fragment_Piaggio.class);
                 startActivity(intent);
             }
         });
         buttonDucati.setOnClickListener(new View.OnClickListener()   {
             @Override
             public void onClick(View view)  {
-                Intent intent = new Intent(CreateUserActivity.this, Fragment_Activity.class);
+                Intent intent = new Intent(CreateUserActivity.this, Fragment_Ducati.class);
                 startActivity(intent);
             }
         });
         buttonYamaha.setOnClickListener(new View.OnClickListener()   {
             @Override
             public void onClick(View view)  {
-                Intent intent = new Intent(CreateUserActivity.this, Fragment_Activity.class);
+                Intent intent = new Intent(CreateUserActivity.this, Fragment_Yamaha.class);
                 startActivity(intent);
             }
         });
         buttonTriumph.setOnClickListener(new View.OnClickListener()   {
             @Override
             public void onClick(View view)  {
-                Intent intent = new Intent(CreateUserActivity.this, Fragment_Activity.class);
+                Intent intent = new Intent(CreateUserActivity.this, Fragment_Triumph.class);
                 startActivity(intent);
             }
         });
         buttonKymCo.setOnClickListener(new View.OnClickListener()   {
             @Override
             public void onClick(View view)  {
-                Intent intent = new Intent(CreateUserActivity.this, Fragment_Activity.class);
+                Intent intent = new Intent(CreateUserActivity.this, Fragment_KymCo.class);
                 startActivity(intent);
             }
         });
         buttonKtm.setOnClickListener(new View.OnClickListener()   {
             @Override
             public void onClick(View view)  {
-                Intent intent = new Intent(CreateUserActivity.this, Fragment_Activity.class);
+                Intent intent = new Intent(CreateUserActivity.this, Fragment_KTM.class);
                 startActivity(intent);
             }
         });
         buttonBenelli.setOnClickListener(new View.OnClickListener()   {
             @Override
             public void onClick(View view)  {
-                Intent intent = new Intent(CreateUserActivity.this, Fragment_Activity.class);
+                Intent intent = new Intent(CreateUserActivity.this, Fragment_Benelli.class);
                 startActivity(intent);
             }
         });
         buttonBmw.setOnClickListener(new View.OnClickListener()   {
             @Override
             public void onClick(View view)  {
-                Intent intent = new Intent(CreateUserActivity.this, Fragment_Activity.class);
+                Intent intent = new Intent(CreateUserActivity.this, Fragment_BMW.class);
                 startActivity(intent);
             }
         });
         buttonHarley.setOnClickListener(new View.OnClickListener()   {
             @Override
             public void onClick(View view)  {
-                Intent intent = new Intent(CreateUserActivity.this, Fragment_Activity.class);
+                Intent intent = new Intent(CreateUserActivity.this, Fragment_Harley.class);
                 startActivity(intent);
             }
         });
+        buttonAprilia.setOnClickListener(new View.OnClickListener()   {
+            @Override
+            public void onClick(View view)  {
+                Intent intent = new Intent(CreateUserActivity.this, Fragment_Aprilia.class);
+                startActivity(intent);
+            }
+        });
+        buttonmvagusta.setOnClickListener(new View.OnClickListener()   {
+            @Override
+            public void onClick(View view)  {
+                Intent intent = new Intent(CreateUserActivity.this, Fragment_Agusta.class);
+                startActivity(intent);
+            }
+        });
+        buttonMotoguzzi.setOnClickListener(new View.OnClickListener()   {
+            @Override
+            public void onClick(View view)  {
+                Intent intent = new Intent(CreateUserActivity.this, Fragment_Guzzi.class);
+                startActivity(intent);
+            }
+        });
+        buttonGPX.setOnClickListener(new View.OnClickListener()   {
+            @Override
+            public void onClick(View view)  {
+                Intent intent = new Intent(CreateUserActivity.this, Fragment_GPX.class);
+                startActivity(intent);
+            }
+        });
+        buttonRoyalEnField.setOnClickListener(new View.OnClickListener()   {
+            @Override
+            public void onClick(View view)  {
+                Intent intent = new Intent(CreateUserActivity.this, Fragment_RoyalEnField.class);
+                startActivity(intent);
+            }
+        });
+
+
 
 
 

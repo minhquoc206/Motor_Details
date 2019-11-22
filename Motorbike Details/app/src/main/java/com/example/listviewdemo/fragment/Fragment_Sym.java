@@ -11,8 +11,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 import com.example.listviewdemo.R;
+
+import java.util.ArrayList;
 
 public class Fragment_Sym extends AppCompatActivity
 {
@@ -22,7 +26,7 @@ public class Fragment_Sym extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_fragment);
+        setContentView(R.layout.sym);
         viewPager = findViewById(R.id.view_paper);
         viewPager.setAdapter( (new PagerDemoAdapter()));
         TabLayout tabLayout = findViewById(R.id.tab_layout);
@@ -56,12 +60,13 @@ public class Fragment_Sym extends AppCompatActivity
         public CharSequence getPageTitle(int position){
             switch (position) {
                 case 0:
-                    return "Pho Thong";
+                    return "PHO THONG";
                 case 1:
-                    return "Phan khoi nho";
+                    return "PKN";
                 default:
-                    return "phan khoi lon";
+                    return "PKL" ;
             }
         }
     }
 }
+

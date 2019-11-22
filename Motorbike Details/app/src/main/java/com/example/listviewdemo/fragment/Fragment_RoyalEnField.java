@@ -1,5 +1,6 @@
 package com.example.listviewdemo.fragment;
 
+
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
@@ -10,7 +11,7 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.example.listviewdemo.R;
 
-public class Fragment_Suzuki extends AppCompatActivity
+public class Fragment_RoyalEnField extends AppCompatActivity
 {
     private ViewPager viewPager;
 
@@ -18,7 +19,7 @@ public class Fragment_Suzuki extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.suzuki);
+        setContentView(R.layout.royalenfield);
         viewPager = findViewById(R.id.view_paper);
         viewPager.setAdapter( (new PagerDemoAdapter()));
         TabLayout tabLayout = findViewById(R.id.tab_layout);
@@ -61,4 +62,3 @@ public class Fragment_Suzuki extends AppCompatActivity
         }
     }
 }
-

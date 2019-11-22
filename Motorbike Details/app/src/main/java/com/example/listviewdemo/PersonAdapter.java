@@ -70,7 +70,6 @@ public class PersonAdapter extends BaseAdapter {
 
         public ViewHolder(View view) {
             tvName = view.findViewById(R.id.tv_name);
-            tvGender = view.findViewById(R.id.tv_gioi_tinh);
             ivAvatar = view.findViewById(R.id.iv_avatar);
         }
     }

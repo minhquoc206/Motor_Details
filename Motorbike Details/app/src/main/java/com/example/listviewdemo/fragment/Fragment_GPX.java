@@ -10,7 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.example.listviewdemo.R;
 
-public class Fragment_Suzuki extends AppCompatActivity
+public class Fragment_GPX extends AppCompatActivity
 {
     private ViewPager viewPager;
 
@@ -18,7 +18,7 @@ public class Fragment_Suzuki extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.suzuki);
+        setContentView(R.layout.gpx);
         viewPager = findViewById(R.id.view_paper);
         viewPager.setAdapter( (new PagerDemoAdapter()));
         TabLayout tabLayout = findViewById(R.id.tab_layout);
@@ -52,7 +52,7 @@ public class Fragment_Suzuki extends AppCompatActivity
         public CharSequence getPageTitle(int position){
             switch (position) {
                 case 0:
-                    return "Pho Thong";
+                    return "PHO THONG";
                 case 1:
                     return "PKN";
                 default:
@@ -61,4 +61,5 @@ public class Fragment_Suzuki extends AppCompatActivity
         }
     }
 }
+
 

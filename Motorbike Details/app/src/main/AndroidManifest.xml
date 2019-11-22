@@ -22,8 +22,27 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity"/>
-        <activity android:name=".fragment.Fragment_Activity"/>
         <activity android:name=".CreateUserActivity" />
+        <activity android:name=".fragment.Fragment_Honda" />
+        <activity android:name=".fragment.Fragment_RoyalEnField"/>
+        <activity android:name=".fragment.Fragment_GPX"/>
+        <activity android:name=".fragment.Fragment_Guzzi"/>
+        <activity android:name=".fragment.Fragment_Agusta"/>
+        <activity android:name=".fragment.Fragment_Aprilia"/>
+        <activity android:name=".fragment.Fragment_Harley"/>
+        <activity android:name=".fragment.Fragment_BMW"/>
+        <activity android:name=".fragment.Fragment_Benelli"/>
+        <activity android:name=".fragment.Fragment_KTM"/>
+        <activity android:name=".fragment.Fragment_KymCo"/>
+        <activity android:name=".fragment.Fragment_Triumph"/>
+        <activity android:name=".fragment.Fragment_Yamaha"/>
+        <activity android:name=".fragment.Fragment_Ducati"/>
+        <activity android:name=".fragment.Fragment_Piaggio"/>
+        <activity android:name=".fragment.Fragment_Kawasaki"/>
+        <activity android:name=".fragment.Fragment_Sym"/>
+        <activity android:name=".fragment.Fragment_Suzuki"/>
+
+
 
     </application>
 

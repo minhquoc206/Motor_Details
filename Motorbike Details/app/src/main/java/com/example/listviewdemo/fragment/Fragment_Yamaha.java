@@ -22,7 +22,7 @@ public class Fragment_Yamaha extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_fragment);
+        setContentView(R.layout.yamaha);
         viewPager = findViewById(R.id.view_paper);
         viewPager.setAdapter( (new PagerDemoAdapter()));
         TabLayout tabLayout = findViewById(R.id.tab_layout);
@@ -58,9 +58,9 @@ public class Fragment_Yamaha extends AppCompatActivity
                 case 0:
                     return "Pho Thong";
                 case 1:
-                    return "Phan khoi nho";
+                    return "PKN";
                 default:
-                    return "phan khoi lon";
+                    return "PKL";
             }
         }
     }

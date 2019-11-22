@@ -1,16 +1,24 @@
 package com.example.listviewdemo.fragment;
 
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 import com.example.listviewdemo.R;
 
-public class Fragment_Suzuki extends AppCompatActivity
+import java.util.ArrayList;
+
+public class Fragment_Kawasaki extends AppCompatActivity
 {
     private ViewPager viewPager;
 
@@ -18,7 +26,7 @@ public class Fragment_Suzuki extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.suzuki);
+        setContentView(R.layout.kawasaki);
         viewPager = findViewById(R.id.view_paper);
         viewPager.setAdapter( (new PagerDemoAdapter()));
         TabLayout tabLayout = findViewById(R.id.tab_layout);
@@ -52,11 +60,11 @@ public class Fragment_Suzuki extends AppCompatActivity
         public CharSequence getPageTitle(int position){
             switch (position) {
                 case 0:
-                    return "Pho Thong";
+                    return "PHO THONG";
                 case 1:
                     return "PKN";
                 default:
-                    return "PKL";
+                    return "PKL" ;
             }
         }
     }
